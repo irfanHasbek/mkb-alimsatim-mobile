@@ -9,7 +9,6 @@
     </author>
   <content src="index.html"/>
   <access origin="*"/>
-  <access origin="http://178.62.134.23:7000" subdomains="true"/>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>

@@ -57,9 +57,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   });
     $httpProvider.defaults.useXDomain = true;
     delete $httpProvider.defaults.headers.common['X-Requested-With'];
-    $httpProvider.defaults.headers.common['Content-Type'] = 'application/json';
-    $httpProvider.defaults.headers.common['Accept'] = 'application/json';
-    $httpProvider.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/giris');
 });
