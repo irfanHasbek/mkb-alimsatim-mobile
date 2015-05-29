@@ -15,7 +15,7 @@ app.controller('girisController', ['$scope', '$state', '$http', '$rootScope', 'S
             $rootScope.girisYapildi = Session.data.girisYapildi;
             $state.go('menu.anasayfa');
         }).error(function(response, status, headers, config) {               
-            alert('Webservis hatasi.')
+            alert('Webservis hatasi : ' + response + ', Status : ' + status);
         });
     }
     $scope.kayit_ol_git = function (){
