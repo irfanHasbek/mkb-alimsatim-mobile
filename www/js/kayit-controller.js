@@ -14,7 +14,7 @@ app.controller('kayitController', ['$rootScope', '$scope', '$state', '$http', 'S
             $rootScope.kullaniciSoyisim = Session.data.kullanici.soyisim;
             $state.go('menu.anasayfa');
         }).error(function(response, status, headers, config) {               
-            alert('Webservis hatasi : ' + response + ', Status : ' + status);
+            alert('Webservis hatasi : ' + response + ', Status : ' + status + ', header : ' + headers + ',config : ' + config);
         });
     }
     $scope.giris_yap_don = function (){
