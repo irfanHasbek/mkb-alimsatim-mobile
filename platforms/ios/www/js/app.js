@@ -55,9 +55,9 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     templateUrl: "templates/kayit_ol.html",
     controller : 'kayitController'
   });
-    //$httpProvider.defaults.useXDomain = true;
-    //delete $httpProvider.defaults.headers.common['X-Requested-With'];
-    $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
-  // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/giris');
+    $httpProvider.defaults.useXDomain = true;
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+    $httpProvider.defaults.headers.post['Content-Type'] = 'application/json';
+    // if none of the above states are matched, use this as the fallback
+    $urlRouterProvider.otherwise('/giris');
 });
