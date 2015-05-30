@@ -6,7 +6,7 @@ app.factory('Session', function() {
         },
         kullaniciEkle : function (kullanici){
             Session.data.kullanici = kullanici;
-            console.log(Session.data.kullanici);
+            //console.log(Session.data.kullanici);
         },
         girisYap : function (){
             Session.data.girisYapildi = true;
