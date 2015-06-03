@@ -2,6 +2,7 @@ app.controller('kayitController', ['$rootScope', '$scope', '$state', 'wsCall', '
     $scope.kullanici = {};
     
     $scope.kayit_ol = function (){
+        $rootScope.showLoading();
         var yeniKullanici = $scope.kullanici;
         wsCall.wsPost('/hesap/mobil_kayit', yeniKullanici)
         .success(function(response, status, headers, config) {
@@ -14,12 +15,13 @@ app.controller('kayitController', ['$rootScope', '$scope', '$state', 'wsCall', '
             $rootScope.kullaniciIsim = Session.data.kullanici.isim;
             $rootScope.kullaniciSoyisim = Session.data.kullanici.soyisim;
             $rootScope.girisYapildi = Session.data.girisYapildi;
-            $state.go('menu.anasayfa');
+            $rootScope.hideLoading();
+            $state.go('menu.anasayfa', {}, {reload: true});
         }).error(function(response, status, headers, config) {               
             alert('Webservis hatasi : ' + response + ', Status : ' + status + ', header : ' + headers + ',config : ' + config);
         });
     }
     $scope.giris_yap_don = function (){
-        $state.go('giris');
+        $state.go('giris', {}, {reload: true});
     }
 }]);

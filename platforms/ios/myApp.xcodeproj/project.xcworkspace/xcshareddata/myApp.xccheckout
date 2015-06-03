@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E4BC4787-70D3-4893-B07C-19B4663E489E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>myApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5C04E7CBC0CC1C6535DA6381D66F2469DF0825AA</key>
+		<string>github.com:irfanHasbek/mkb-alimsatim-mobile.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/myApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5C04E7CBC0CC1C6535DA6381D66F2469DF0825AA</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:irfanHasbek/mkb-alimsatim-mobile.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5C04E7CBC0CC1C6535DA6381D66F2469DF0825AA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5C04E7CBC0CC1C6535DA6381D66F2469DF0825AA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>mkb-alimsatim-mobile</string>
+		</dict>
+	</array>
+</dict>
+</plist>

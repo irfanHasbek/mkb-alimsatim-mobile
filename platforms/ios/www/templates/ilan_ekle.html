@@ -1,0 +1,64 @@
+<ion-view title="Ilan Ekle">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <div class="list card">
+     <label class="item item-input item-select">
+     <i class="icon ion-ios-folder placeholder-icon"></i>
+      <div class="input-label">
+       Kategori
+      </div>
+      <select style="margin-top:-3px;" ng-model="ilan.kategori">
+          <option ng-selected="true" value="Bilgisayar">Bilgisayar</option>
+          <option value="Beyaz Esya">Beyaz Esya</option>
+          <option value="Mobilya">Mobilya</option>
+          <option value="Kiralik Daire">Kiralik Daire</option>
+          <option value="Cep Telefonu">Cep Telefonu</option>
+          <option value="Oyun ve Konsol">Oyun ve Konsol</option>
+      </select>
+    </label>
+     <label class="item item-input item-select">
+     <i class="icon ion-ios-folder placeholder-icon"></i>
+      <div class="input-label">
+       Sehir
+      </div>
+      <select style="margin-top:-3px;" ng-model="ilan.sehir" ng-options="icerik.sehir as icerik.sehir for icerik in sehirListesi" ng-change="ilceYukle()">
+          <option ng-selected="true" value="Seciniz">Seciniz</option>
+      </select>
+    </label>
+     <label class="item item-input item-select">
+     <i class="icon ion-ios-folder placeholder-icon"></i>
+      <div class="input-label">
+       Ilce
+      </div>
+      <select style="margin-top:-3px;" ng-model="ilan.ilce" ng-options="icerik.ilceAdi as icerik.ilceAdi for icerik in ilceListesi">
+          <option ng-selected="true" value="Seciniz">Seciniz</option>
+      </select>
+    </label>
+      <label class="item item-input">
+        <i class="icon ion-ios-folder placeholder-icon"></i>
+        <input type="text" placeholder="Ilan Basligi" ng-model="ilan.baslik">
+      </label>
+      <label class="item item-input">
+          <i style="margin-top:-160px;" class="icon ion-ios-albums placeholder-icon"></i>
+          <textarea style="height:180px;" placeholder="Ilan Aciklamasi" ng-model="ilan.icerik"></textarea>
+      </label>
+      <label class="item item-input">
+        <i class="icon ion-cash placeholder-icon"></i>
+        <input type="number" placeholder="Fiyat" ng-model="ilan.fiyat">
+      </label>
+    </div>
+    </ion-content>
+    <div class="bar bar-footer">
+        <div class="row" style="margin-top:-8px;">
+            <div class="col col-60">
+                <button class="button button-icon icon ion-arrow-right-b" ng-click="ileri()"> Ileri</button>
+            </div>
+            <div class="col col-40 text-center"  style="margin-top:-4px;">
+                <h6 style="margin-top:-1px;">Adim (1/2)</h6>
+                <progress max="100" value="50" style="background-color:#f00;margin-top:-5px;"> </progress>
+            </div>
+        </div>
+    </div>
+</ion-view>

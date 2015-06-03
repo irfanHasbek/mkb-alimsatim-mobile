@@ -1,0 +1,76 @@
+<ion-view title="Ilan Ekle">
+  <ion-content class="has-header" style="overflow-y:scroll;">
+    <div class="row" style="margin-left:-3px;">
+        <div class="col col-33 text-center" style="border:2px dashed #686868;height:150px;">
+            <img class="full-image" ng-src="{{src1}}" id="resim1" style="height:105px;" ng-click="resimAc($event)">
+            <progress max="100" value="{{yuklemeIlerleme1.ilerleme}}"></progress>
+        </div>
+        <div class="col col-33 text-center" style="border:2px dashed #686868;height:150px;margin-left:3px;">
+            <img class="full-image" ng-src="{{src2}}" id="resim2" style="height:105px;" ng-click="resimAc($event)">
+            <progress max="100" value="{{yuklemeIlerleme2.ilerleme}}"></progress>
+        </div>
+        <div class="col col-33 text-center" style="border:2px dashed #686868;height:150px;margin-left:3px;">
+            <img class="full-image" ng-src="{{src3}}" id="resim3" style="height:105px;" ng-click="resimAc($event)">
+            <progress max="100" value="{{yuklemeIlerleme3.ilerleme}}"></progress>
+        </div>
+    </div>
+    <div class="row" style="margin-left:-3px;">
+        <div class="col col-33 text-center" style="border:2px dashed #686868;height:150px;margin-top:3px;">
+            <img class="full-image" ng-src="{{src4}}" id="resim4" style="height:105px;" ng-click="resimAc($event)">
+            <progress max="100" value="{{yuklemeIlerleme4.ilerleme}}"></progress>
+        </div>
+        <div class="col col-33 text-center" style="border:2px dashed #686868;height:150px;margin-left:3px;margin-top:3px;">
+            <img class="full-image" ng-src="{{src5}}" id="resim5" style="height:105px;" ng-click="resimAc($event)">
+            <progress max="100" value="{{yuklemeIlerleme5.ilerleme}}"></progress>
+        </div>
+        <div class="col col-33 text-center" style="border:2px dashed #686868;height:150px;margin-left:3px;margin-top:3px;">
+            <img class="full-image" ng-src="{{src6}}" id="resim6" style="height:105px;" ng-click="resimAc($event)">
+            <progress max="100" value="{{yuklemeIlerleme6.ilerleme}}"></progress>
+        </div>
+      </div>
+      <br>
+      <div class="list text-center">
+          <h3 >ilan Özeti</h3>
+      </div>
+    <div class="card" style="margin-top:-20px;">
+      <label class="item item-input">
+        <span class="input-label">Kategori</span>
+          <label>{{ilan.kategori}}</label>
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Sehir-Ilce</span>
+          <label>{{ilan.sehir}}</label>-<label>{{ilan.ilce}}</label>
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Baslik</span>
+          <label>{{ilan.baslik}}</label>
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Aciklama</span>
+          <label>{{ilan.icerik}}</label>
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Fiyat</span>
+          <label>{{ilan.fiyat}} TL</label>
+      </label>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </ion-content>
+    <div class="bar bar-footer">
+        <div class="row" style="margin-top:-8px;">
+            <div class="col col-60">
+                <button class="button button-icon icon ion-ios-checkmark" ng-click="kaydet()" ng-disabled="!ilanEkleAktif"> Kaydet</button>
+            </div>
+            <div class="col col-40 text-center"  style="margin-top:-4px;">
+                <h6 style="margin-top:-1px;">Adim (2/2)</h6>
+                <progress max="100" value="100" style="background-color:#f00;margin-top:-5px;"> </progress>
+            </div>
+        </div>
+    </div>
+</ion-view>

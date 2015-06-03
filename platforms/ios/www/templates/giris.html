@@ -20,7 +20,7 @@
             <div class="list list-inset">
               <label class="item item-input">
                 <i class="icon ion-person placeholder-icon"></i>
-                <input type="text" placeholder="Email" ng-model='kullanici.email' required>
+                <input ng-init="kullanici.email" type="text" placeholder="Email" ng-model='kullanici.email' required>
               </label>
               <label class="item item-input">
                 <i class="icon ion-locked placeholder-icon"></i>
@@ -37,7 +37,7 @@
             </div>
             <div class="col-50 text-left">
                 <label class="toggle">
-                   <input type="checkbox">
+                   <input ng-model="temp.beni_hatirla" type="checkbox">
                    <div class="track">
                      <div class="handle"></div>
                    </div>
